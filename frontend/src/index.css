@@ -29,12 +29,12 @@
 		rgba(0, 0, 0, 0.1) 55%,
 		transparent 70%
 	);
-	bottom: -10vw;
+	bottom: -5vh;
 	content: "";
-	left: 10vw;
+	left: 5vw;
 	position: absolute;
-	right: 10vw;
-	top: -10vw;
+	right: 5vw;
+	top: -5vh;
 	z-index: -1;
 }
 
