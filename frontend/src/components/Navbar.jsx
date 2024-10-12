@@ -61,12 +61,13 @@ const Navbar = () => {
             onClick={() => {
               setContentType("movie");
               toggleMobileMenu();
+            }}
             >Movies</Link>
              <Link to ={'/'}
             className='block hover:underline p-2'
             onClick={() => {
               setContentType("tv");
-              toggleMobileMenu();
+              toggleMobileMenu()}
           }}
             >Tv shows</Link>
              <Link to ={'/history'}
