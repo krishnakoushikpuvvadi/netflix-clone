@@ -30,20 +30,20 @@ const WatchPage = () => {
     const {contentType} = useContentStore();
     const slideRef = useRef(null);
 
-    useEffect(() => {
-        const getTrailers = async ()=>{
-            try{
-            const res = await axios.get(`/api/v1/${contentType}/${id}/trailers`);
-            setTrailers(res.data.trailers);
-            }catch(error){
-                if(error.message.includes("404")){
-                   setTrailers([]);
-            }
-        }
-       };
-       getTrailers();
+    // useEffect(() => {
+    //     const getTrailers = async ()=>{
+    //         try{
+    //         const res = await axios.get(`/api/v1/${contentType}/${id}/trailers`);
+    //         setTrailers(res.data.trailers);
+    //         }catch(error){
+    //             if(error.message.includes("404")){
+    //                setTrailers([]);
+    //         }
+    //     }
+    //    };
+    //    getTrailers();
     
-        },[contentType,id]);
+    //     },[contentType,id]);
 
 
     useEffect(()=>{
