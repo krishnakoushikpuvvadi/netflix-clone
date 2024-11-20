@@ -39,7 +39,7 @@ export async function getTvDetails(req, res) {
 	}
 }
 
-export async function getSimilarTvs(req, res) {
+export async function getSimilarTv(req, res) {
 	const { id } = req.params;
 	try {
 		const data = await fetchFromTMDB(`https://api.themoviedb.org/3/tv/${id}/similar?language=en-US&page=1`);
