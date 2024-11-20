@@ -49,7 +49,7 @@ export async function getSimilarMovies(req, res) {
 	}
 }
 
-export async function getMovieByCategory(req, res) {
+export async function getMoviesByCategory(req, res) {
 	const { category } = req.params;
 	try {
 		const data = await fetchFromTMDB(`https://api.themoviedb.org/3/movie/${category}?language=en-US&page=1`);
