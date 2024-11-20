@@ -3,8 +3,7 @@ import {  getTrendingMovie } from '../controllers/movieControllers.js';
 import { getMovieTrailers } from '../controllers/movieControllers.js';
 import { getMovieDetails } from '../controllers/movieControllers.js';
 import { getSimilarMovies} from '../controllers/movieControllers.js'
-import { getMovieByCategory } from '../controllers/movieControllers.js';
-
+import { getMoviesByCategory } from '../controllers/movieControllers.js';
 const router = express.Router();
 
 router.get("/trending",getTrendingMovie)
